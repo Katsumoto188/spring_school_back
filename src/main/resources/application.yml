@@ -1,0 +1,3 @@
+spring:
+  data.mongodb:
+    uri: mongodb+srv://school_system:P69Ff4UCnfSgeIuA@school.57owp.mongodb.net/school
