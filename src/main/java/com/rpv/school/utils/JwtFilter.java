@@ -15,8 +15,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
 
 @Component
 public class JwtFilter extends OncePerRequestFilter { // TODO: Fazer
@@ -42,7 +40,6 @@ public class JwtFilter extends OncePerRequestFilter { // TODO: Fazer
         }
 
         // TODO: Revisar essa parte...
-
         if(username != null && SecurityContextHolder.getContext().getAuthentication() == null)
         {
             UserDetails userDetails = customUserDetailsService.loadUserByUsername(username);
